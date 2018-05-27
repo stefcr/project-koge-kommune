@@ -1,0 +1,79 @@
+/*
+* Theme Name: Royal Furbish - Group #3
+* Description: Fourth project for Zibat Campus Køge
+* Author: Group #3
+* Author URI: http://stefancristian.com
+* Version: 1.0
+*/
+
+@import url('normalize.min.css');
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body  {
+    background: #fdfdfd;
+    color: #414141;
+    font-family: 'Lato', sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #3e3e3e;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+}
+
+::-moz-selection {
+    background: #1f2123;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #1f2123;
+    color: #fff;
+    text-shadow: none;
+}
+
+/* responsive images */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* align-center class */
+
+.align-center {
+    margin: 0 auto !important;
+    text-align: center;
+}
+
+/* scrollbar > chrome */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+/* header */
