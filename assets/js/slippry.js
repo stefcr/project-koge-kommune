@@ -39,11 +39,11 @@
     preload: 'visible', // visible, all | resources to wait for until showing slider
 
     // pager
-    pager: true,
+    pager: false,
     pagerClass: 'sy-pager',
 
     // controls
-    controls: true,
+    controls: false,
     controlClass: 'sy-controls',
     prevClass: 'sy-prev',
     prevText: 'Previous',
@@ -67,7 +67,7 @@
     autoHover: true,
     autoHoverDelay: 100,
     autoDelay: 500,
-    pause: 4000,
+    pause: 2500,
 
     // callback functions
     onSliderLoad: function () { // when slider loaded
