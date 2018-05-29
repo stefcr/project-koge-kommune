@@ -2,9 +2,9 @@
 * Theme Name: Køge Kommune
 * Description: Web concept for Køge Kommune
 * Author: Stefan Cristian, Razvan Barbulescu
-* Author URI: http://stefancristian.com
 * Version: 1.0
 */
+
 
 @import url('normalize.min.css');
 @import url('slippry.css');
@@ -26,7 +26,7 @@ body  {
 }
 
 a:link, a:visited, a:hover, a:active {
-    color: #3e3e3e;
+    color: #fefefe;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-weight: 800;
@@ -77,4 +77,26 @@ img {
 	background-color: #555;
 }
 
+/* main container */
+.container{
+}
+
 /* header */
+
+header{
+    color: transparent;
+    z-index: 9999;
+    position: absolute;
+
+
+}
+.navigation{
+    display: inline-block;
+    width: auto;
+}
+
+.signUpButton{
+    border: 1px solid #fefefe;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+}
