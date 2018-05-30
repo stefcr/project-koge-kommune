@@ -97,7 +97,6 @@ header {
     z-index: 1;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     margin-top: 20px;
 }
 
@@ -161,7 +160,8 @@ header {
     grid-template-columns:1fr 1fr 1fr;
     justify-self: center;
     margin-top: 10%;
-    grid-column-gap: 10px;
+    grid-column-gap: 40px;
+
 
 
 }
@@ -173,9 +173,14 @@ header {
 }
 .instructions h2{
     padding-top: 10px;
-    font-size: 21.74px ;
-    border-bottom: ;
+    font-size: 21.74px;
+    border-bottom: 5px solid #fefefe;
+    margin-bottom: 2px;
 
+}
+.box{
+    border: 1px solid #fefefe;
+    padding: 10px;
 }
 
 
