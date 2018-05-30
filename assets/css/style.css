@@ -8,6 +8,7 @@
 
 @import url('normalize.min.css');
 @import url('slippry.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
 html {
     -webkit-box-sizing: border-box;
@@ -21,14 +22,14 @@ html {
 
 body  {
     background: #fdfdfd;
-    color: #414141;
-    font-family: 'Lato', sans-serif;
+    color: #fefefe;
+    font-family: 'Roboto', sans-serif;
 }
 
 a:link, a:visited, a:hover, a:active {
     color: #fefefe;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 800;
 }
 
@@ -77,26 +78,146 @@ img {
 	background-color: #555;
 }
 
-/* main container */
-.container{
+
+
+
+/* wrapper */
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-rows: auto;
+    position: relative;
 }
 
 /* header */
-
-header{
-    color: transparent;
-    z-index: 9999;
+header {
+    grid-column: 2/3;
+    grid-row: 2/3;
     position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+
+ header > img,
+ nav {
+     display: inline-block;
+     vertical-align: middle;
+
+ }
+ header > img {
+     grid-column: 1/2;
+     align-self: center;
+ }
+
+ header > nav {
+     grid-column: 2/3;
+     text-align: right;
+     align-self: center;
+ }
+ .navigation a{
+     font-size: 18px;
+     letter-spacing: 0.5px;
+     font-weight: normal;
+     margin-left: 30px;
+ }
+ .signUpButton{
+     border: 1px solid #fefefe;
+     border-radius: 20px;
+     padding: 10px 25px 10px 25px;
+ }
+
+
+/* Slider */
+.slider-container{
+    position: relative;
+    z-index: -9999;
+    grid-column: 1/4;
+    grid-row: 3/4;
+
+}
+
+/* First-Section */
+
+#first-section{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    position: absolute;
+    top: 22%;
+    width: 100%;
+}
+#first-section h1{
+    font-size: 60px;
+    letter-spacing: 8px;
+
+}
+/* Instruction for the Website styling */
+
+.instructions{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    justify-self: center;
+    margin-top: 10%;
+    grid-column-gap: 10px;
 
 
 }
-.navigation{
-    display: inline-block;
-    width: auto;
+.instructions p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 30px;
+
+}
+.instructions h2{
+    padding-top: 10px;
+    font-size: 21.74px ;
+    border-bottom: ;
+
 }
 
-.signUpButton{
-    border: 1px solid #fefefe;
-    border-radius: 10px;
-    padding: 5px 20px 5px 20px;
+
+.firstItem{
+    grid-column: 1/2;
+    grid-row: 1/2;
+
 }
+.firstItem2{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self:center;
+}
+.secondItem{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.secondItem2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+}
+
+.thirdItem{
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+}
+.thirdItem2{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
