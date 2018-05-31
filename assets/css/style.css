@@ -177,11 +177,16 @@ header {
     border-bottom: 5px solid #fefefe;
     margin-bottom: 2px;
 
+
 }
 .box{
+
     border: 1px solid #fefefe;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
+    width: 50px;
+    height: 50px;
 }
+
 
 
 .firstItem{
@@ -214,6 +219,114 @@ header {
     grid-row: 1/2;
     justify-self:center;
 }
+
+
+/*arrow-up*/
+#first-section .arrow{
+    border: solid #fefefe;
+    border-width: 0 6px 6px 0;
+    border-radius: 0 3px 0px 3px;
+    padding: 15px;
+    display: inline-block;
+    position: absolute;
+    left: 49%;
+    margin-right: -50%;
+    margin-top: 50px;
+
+
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+ /* Pointer */
+#pointer {
+    width: 170px;
+    height: 30px;
+    position: relative;
+    background: #fefefe;
+    border-radius:20px;
+    left: 55%;
+    margin-right: -50%;
+    margin-top: 42px;
+
+
+}
+#pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-radius:20px;
+    border-bottom: 20px solid transparent;
+}
+#pointer:before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 30px solid #fefefe;
+    border-top: 18px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-radius:20px;
+
+
+;
+}
+.pointer{
+    text-align:center;
+    vertical-align:middle;
+    line-height: 30px;
+    color:black;
+    font-size:15px;
+    z-index: 2;
+    font-weight: bold;
+
+}
+
+/* Categories */
+.categories{
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 8%;
+    position: relative;
+    z-index: 1;
+}
+
+/* second section*/
+.background-color{
+     grid-column: 1/4;
+     grid-row: 4/5;
+     position: relative;
+     z-index: 4;
+     width: 100%;
+    background-color: #ebebeb;
+    height: 70px;
+    border-bottom: 0.5px solid #2d3951;
+
+
+ }
+ .categories-name{
+     grid-column: 2/3 ;
+     grid-row: 4/5;
+     position: relative;
+     z-index: 4;
+     font-size: 18px;
+     letter-spacing: 0.5px;
+     color: #2d3951;
+     line-height:80px;
+     height: 70px;
+     background-color: transparent;
+     margin: 0;
+ }
+
 
 
 
