@@ -710,3 +710,57 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* ============ NU TRECI DE LINIA ASTA ===========*/
+
+
+    div.sign-in-content {
+692
+        padding: 20px;
+693
+        color: #2d3951;
+694
+    }
+695
+696
+    div.sign-in-content > h3 {
+697
+        padding: 0 0 30px;
+698
+    }
+699
+700
+        div.sign-in-content > form > input {
+701
+            width: 90%;
+702
+            display: block;
+703
+            margin: 30px auto;
+704
+            opacity: .7;
+705
+        }
+706
+707
+        div.sign-in-content > form > button {
+708
+            width: 80%;
+709
+            display: block;
+710
+            margin: 30px auto 0;
+711
+            padding: 10px;
+712
+        }
+713
+714
+    div.sign-in-container > img {
+715
+        border-bottom-left-radius: 10px;
+716
+        border-bottom-right-radius: 10px;
+717
+    }
+718
