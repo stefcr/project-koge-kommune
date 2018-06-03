@@ -89,7 +89,6 @@ img {
     grid-template-columns: 1fr 20fr 1fr;
     grid-template-rows: auto;
     position: relative;
-    max-width: 1200px;
 }
 
 /* header */
@@ -672,5 +671,67 @@ textarea:focus{
 .F-S{
     grid-row: 4/5;
 }
+
+
+/* sign-in - pop-up */
+
+div.sign-in-container {
+    display: none;
+    margin: auto;
+    background: #fefefe;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 500px;
+    border-radius: 10px;
+}
+
+    div.sign-in-content {
+        padding: 20px;
+        color: #2d3951;
+    }
+
+    div.sign-in-content > h3 {
+        padding: 0 0 30px;
+    }
+
+        div.sign-in-content > form > input {
+            width: 90%;
+            display: block;
+            margin: 30px auto;
+            opacity: .7;
+        }
+
+        div.sign-in-content > form > button {
+            width: 80%;
+            display: block;
+            margin: 30px auto 0;
+            padding: 10px;
+        }
+
+    div.sign-in-container > img {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
