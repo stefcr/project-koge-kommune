@@ -8,7 +8,7 @@
 
 @import url('normalize.min.css');
 @import url('slippry.css');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700');
 
 html {
     -webkit-box-sizing: border-box;
@@ -427,6 +427,7 @@ header {
     grid-row: auto;
     display: grid;
     margin-top: 5%;
+    margin-bottom: 10%;
 }
 .eboks-icon{
     grid-column: 3/4;
@@ -442,9 +443,214 @@ header {
 
 }
 
+/*===========------- Third-Section ---------===========*/
+
+#third-section{
+    grid-row: 5/6;
+    grid-column: 2/3;
+    height: auto;
+}
+.backgroundImage{
+    z-index:1;
+    position: relative;
+    grid-row: 5/6;
+    grid-column: 1/4;
+}
 
 
+#third-section p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color:#2d3951
+
+}
+#third-section h3{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:#2d3951
+}
+/*============------Contact Container ---------===========*/
 
 
+.contact-container{
+
+    background-color: #fefefe;
+    border-radius: 10px;
+    position: relative;
+    z-index: 6;
+    display: grid;
+    grid-template-columns: 0.6fr 4fr 4fr 0.6fr;
+    width: 100%;
+    height: 70%;
+    margin-top: 10%;
+    grid-template-rows: 2% 32% 32% 32% 2%;
+    padding-top: 40px;
+    grid-column-gap: 40px;
+}
+
+
+.contact-us{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.form-description{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 70px;
+    color:#2d3951;
+}
+
+/*==================---------------- Form Design ----------------================*/
+
+form{
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+}
+.input{
+    border-bottom:1px solid black;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    padding-bottom:10px;
+    width:45%;
+    margin-bottom: 6%;
+    margin-right: 3%;
+    font-weight: 500;
+}
+::placeholder{
+    color:#2d3951;
+}
+
+input{
+    width:1fr
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; }
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+textarea:focus:-ms-input-placeholder { color:transparent; }
+input:focus{
+    outline-width: 0;
+
+}
+.comment{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    width: 520px;
+    height: 30px;
+    border-bottom: 1px solid #2d3951;
+    border-top: 0;
+    border-left:0;
+    border-right: 0;
+}
+textarea:focus{
+    outline-width: 0;
+}
+
+.button{
+  grid-column: 2/3;
+    grid-row: 4/5;
+    width: 520px;
+    height:62px;
+    margin-top: 70px;
+    background-color: #2d3951;
+    border-radius: 31px;
+    border: 0px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #fefefe;
+
+
+}
+/*================-----------------Right Side Contact----------===================*/
+
+.canFindUs{
+    grid-column: 3/4;
+    grid-row: 2/3;
+
+}
+.findUs-description{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin-top: 70px;
+
+}
+.kogeM{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    color: #2d3951;
+    margin-top: 0;
+    letter-spacing: 5px;
+
+
+}
+
+.info{
+    grid-column: 3/4;
+    grid-row:3/4;
+    margin-top: 25px;
+    letter-spacing: 5px !important;
+
+}
+
+/*-------------------Hours---------------*/
+.hours{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:15px 40px 15px 40px 15px 40px;
+    grid-column-gap: 50px;
+
+}
+.hours h4{
+    color: #2d3951;
+    margin: 0;
+    letter-spacing: 3px !important;
+}
+.hours p{
+    margin-top: 0;
+    margin-bottom: 10px;
+    align-self: start;
+    letter-spacing: 3px !important;
+}
+.M, .M-S{
+    grid-column: 1/2;
+
+}
+.T, .T-S{
+    grid-column:1/2;
+
+}
+.W, .W-S{
+
+    grid-column:1/2;
+}
+.Th, .Th-S{
+    grid-column: 2/3;
+
+}
+.F, .F-S{
+    grid-column: 2/3;
+}
+.Th{
+    grid-row: 1/2;
+}
+.Th-S{
+    grid-row: 2/3;
+}
+.F{
+    grid-row: 3/4;
+}
+.F-S{
+    grid-row: 4/5;
+}
 
 
