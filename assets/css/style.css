@@ -87,6 +87,7 @@ img {
     grid-template-columns: 1fr 20fr 1fr;
     grid-template-rows: auto;
     position: relative;
+    max-width: 1200px;
 }
 
 /* header */
@@ -381,6 +382,7 @@ header {
 .residence-permit-photo{
     justify-self: end;
     margin-right: 50px;
+    width:35%;
 }
 .big-photo-rp{
     width: 23%;
@@ -407,6 +409,9 @@ header {
     left: -10%;
     width:33%;
 }
+.cpr-icon{
+    width:50%;
+}
 
 /*==========-----NEMID-----==========*/
 
@@ -422,6 +427,7 @@ header {
 .nemid{
     justify-self: end;
     margin-right: 50px;
+    width:35%;
 }
 
 /*=============-------EBOKS---------============*/
@@ -438,6 +444,7 @@ header {
 .eboks-icon{
     grid-column: 3/4;
     grid-row: 1/2;
+    width:40%;
 
 }
 .touch-id-big{
@@ -550,11 +557,16 @@ input:focus{
     grid-column: 2/3;
     grid-row: 4/5;
     width: 520px;
-    height: 30px;
+    height: 50px;
     border-bottom: 1px solid #2d3951;
     border-top: 0;
     border-left:0;
     border-right: 0;
+    max-width: 520px;
+    max-height: 50px;
+    min-width: 520px;
+    min-height: 50px;
+
 }
 textarea:focus{
     outline-width: 0;
