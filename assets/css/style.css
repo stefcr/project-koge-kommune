@@ -78,11 +78,6 @@ img {
 	background-color: #555;
 }
 
-
-.container{
-    max-width: 1200px;
-}
-
 /* wrapper */
 .wrapper{
     display: grid;
@@ -95,11 +90,17 @@ img {
 header {
     grid-column: 2/3;
     grid-row: 2/3;
-    position: absolute;
     z-index: 1;
     width: 100%;
     display: grid;
     margin-top: 20px;
+    max-width: 1200px;
+
+
+}
+.header-container{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
  header > img,
@@ -145,8 +146,7 @@ header {
 #first-section{
     grid-column: 2/3;
     grid-row: 3/4;
-    position: absolute;
-    top: 22%;
+    position: relative;
     width: 100%;
 }
 #first-section h1{
@@ -342,7 +342,16 @@ header {
      grid-column: 2/3;
      grid-row: 4/5;
 
-
+ }
+ .info-container2{
+     max-width: 1200px;
+     grid-column: 2/3;
+     grid-row: 4/5;
+     margin: 0 auto;
+ }
+ .info-container{
+     max-width: 1200px;
+     margin:0 auto;
  }
 
 
@@ -463,6 +472,7 @@ header {
     grid-row: 5/6;
     grid-column: 2/3;
     height: auto;
+    margin-top: 15%;
 }
 .backgroundImage{
     z-index:1;
@@ -498,10 +508,11 @@ header {
     grid-template-columns: 0.6fr 4fr 4fr 0.6fr;
     width: 100%;
     height: 70%;
-    margin-top: 10%;
     grid-template-rows: 2% 32% 32% 32% 2%;
     padding-top: 40px;
     grid-column-gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
@@ -522,8 +533,10 @@ form{
     grid-column: 2/3;
     grid-row: 3/4;
 
+
 }
-.input{
+
+input{
     border-bottom:1px solid black;
     border-top:0;
     border-left:0;
@@ -672,66 +685,24 @@ textarea:focus{
     grid-row: 4/5;
 }
 
+/*footer*/
 
-/* sign-in - pop-up */
-
-div.sign-in-container {
-    display: none;
-    margin: auto;
-    background: #fefefe;
-    position: absolute;
-    top: 20px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    width: 500px;
-    border-radius: 10px;
+.backgroundImage2{
+    grid-column:1/4;
+    grid-row:6/7;
+    width: 110%!important;
 }
 
-    div.sign-in-content {
-        padding: 20px;
-        color: #2d3951;
-    }
+footer {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    margin-top: 40px;
 
-    div.sign-in-content > h3 {
-        padding: 0 0 30px;
-    }
+}
 
-        div.sign-in-content > form > input {
-            width: 90%;
-            display: block;
-            margin: 30px auto;
-            opacity: .7;
-        }
-
-        div.sign-in-content > form > button {
-            width: 80%;
-            display: block;
-            margin: 30px auto 0;
-            padding: 10px;
-        }
-
-    div.sign-in-container > img {
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+}
