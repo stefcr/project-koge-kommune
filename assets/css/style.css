@@ -713,6 +713,17 @@ footer {
 
 /* ============ NU TRECI DE LINIA ASTA ===========*/
 
+div.sign-in-container {
+    display: none;
+    background: #fefefe;
+    margin: auto;
+    top: 40px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 500px;
+    border-radius: 10px;
+}
 
     div.sign-in-content {
         padding: 20px;
@@ -721,12 +732,12 @@ footer {
 
     div.sign-in-content > h3 {
         padding: 0 0 30px;
+        text-align: center;
     }
 
         div.sign-in-content > form > input {
             width: 90%;
             display: block;
-
             margin: 30px auto;
             opacity: .7;
         }
