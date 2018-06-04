@@ -50,7 +50,7 @@ $(".signUpButton").click(function() {
 
 
     $(".bot-img").click(function(){
-        $("div#chat.conv-form-wrapper").css("display", "block");
+        $(".conv-form-wrapper").toggleClass("opacity-toggle");
     });
 
 

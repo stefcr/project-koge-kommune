@@ -1,4 +1,6 @@
-
+.opacity-toggle {
+    opacity: 1 !important;
+}
 
 .typing_loader{
     width: 6px;
@@ -142,8 +144,8 @@ div#chat.conv-form-wrapper {
     background-color: #fefefe;
     border-radius: 10px;
     width: 300px;
-    display: none;
-
+    opacity: 0;
+    transition: opacity .5s ease;
 }
 div#chat.conv-form-wrapper div.wrapper-messages {
     position: relative;
