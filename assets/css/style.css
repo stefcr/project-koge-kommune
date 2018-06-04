@@ -333,6 +333,11 @@ header {
     margin-top: 8%;
     position: relative;
     z-index: 1;
+    transition: .5s;
+}
+.mov{
+    margin-top: 0%;
+
 }
 
 /* ===== Background color for the categories-name / second section ======*/
@@ -719,7 +724,18 @@ textarea:focus{
     color: #2d3951;
     grid-row:5/6;
 }
-
+.socialmedia i {
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+.socialmedia a{
+    font-size: 30px;
+    color: #2d3951;
+}
+.socialmedia i:hover{
+    transform: scale(1.5);
+}
 /*footer*/
 
 .backgroundImage2{

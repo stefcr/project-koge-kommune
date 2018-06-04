@@ -51,7 +51,12 @@ $(".signUpButton").click(function() {
 
     $(".bot-img").click(function(){
         $(".conv-form-wrapper").toggleClass("opacity-toggle");
+    })
+
+    $(".arrow").click(function(){
+        $(".categories").toggleClass("mov");
     });
+
 
 
 });
