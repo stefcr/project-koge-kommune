@@ -45,7 +45,7 @@ $('a[href*="#"]')
   });
 
 $(".signUpButton").click(function() {
-    $(".sign-in-container").toggle("slow");
+    $(".sign-in-container").toggleClass("opacity-toggle");
 });
 
 

@@ -97,6 +97,15 @@ img {
 
 }
 
+/* danish flag */
+.danishflag{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    width: 25%;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
 
 /* header */
 header {
@@ -186,6 +195,7 @@ header {
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 30px;
+    padding-left: 30px;
 
 }
 .instructions h2{
@@ -204,6 +214,7 @@ header {
     height: 50px;
     transform: rotate(45deg);
     display: block;
+    border-radius: 10px;
 }
 
     .box > span {
@@ -700,6 +711,14 @@ textarea:focus{
 .F-S{
     grid-row: 4/5;
 }
+.socialmedia{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 30px;
+    color: #2d3951;
+    grid-row:5/6;
+}
 
 /*footer*/
 
@@ -736,7 +755,6 @@ footer {
 /* ============ NU TRECI DE LINIA ASTA ===========*/
 
 div.sign-in-container {
-    display: none;
     background: #fefefe;
     margin: auto;
     top: 40px;
@@ -745,6 +763,9 @@ div.sign-in-container {
     position: absolute;
     width: 500px;
     border-radius: 10px;
+    transition: opacity .5s ease;
+    opacity: 0;
+
 }
 
     div.sign-in-content {
