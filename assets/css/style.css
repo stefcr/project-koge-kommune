@@ -191,20 +191,21 @@ header {
 
 }
 
-.instructions p {
+.instructions, .instructions-community p {
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 30px;
     padding-left: 30px;
 
 }
-.instructions h2{
+.instructions, .instructions-community h2{
     padding-top: 10px;
     font-size: 21.74px;
     border-bottom: 5px solid #fefefe;
     margin-bottom: 2px;
-
-
+}
+.instructions-community h2{
+    border-bottom: 0 !important;
 }
 .box{
 
@@ -351,9 +352,9 @@ header {
     height: 70px;
     border-bottom: 0.5px solid #2d3951;
  }
-/*===== Second Section==================*/
+/*===== Second Section (index/community)==================*/
 
-#second-section{
+#second-section, #second-section-community{
     grid-column: 2/3 ;
     grid-row: 4/5;
     position: relative;
@@ -388,7 +389,7 @@ header {
 
 
 
- /*==================CONTENT + H3 for description===========*/
+ /*==================CONTENT + H3 for description (index/community)===========*/
 
 .section-name{
     color: #2d3951;
@@ -407,13 +408,22 @@ header {
      letter-spacing: 1px;
      line-height: 30px;
  }
+ .content2{
+     grid-column: 2/3;
+     grid-row: 2/3;
+     color: #2d3951;
+     margin-top: 70px;
+     font-size: 14px;
+     letter-spacing: 1px;
+     line-height: 30px;
+ }
 
 
 
 
 
- /*=============Residence Permit =================*/
-#residence-permit{
+ /*=============Residence Permit(index) / healthcare (community)=================*/
+#residence-permit, #healthcare{
     position: relative;
     z-index: 5;
     margin-top: 10%;
@@ -435,8 +445,8 @@ header {
     right: 5%;
 }
 
-/*==============CPR===================*/
-#cpr{
+/*==============CPR(index) / education(community)===================*/
+#cpr, #education, #work{
     position: relative;
     z-index: 5;
     margin-top: 5%;
@@ -455,10 +465,10 @@ header {
     width:50%;
 }
 
-/*==========-----NEMID-----==========*/
+/*==========-----NEMID(index)/ Housing(community)-----==========*/
 
 
-#NEMID{
+#NEMID, #housing{
     position: relative;
     z-index: 5;
     grid-template-columns: 2fr 8fr 2fr;
@@ -474,7 +484,7 @@ header {
 
 /*=============-------EBOKS---------============*/
 
-#eboks{
+#eboks, #travel{
     position: relative;
     z-index: 5;
     grid-template-columns: 2fr 8fr 2fr;
@@ -813,3 +823,70 @@ div.sign-in-container {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ COMMUNITY PAGE -------------- */
+
+/* first-section */
+
+#first-section-community{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.background-image-community{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    position: relative;
+    z-index: -9999;
+}
+
+.instructions-community{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    justify-self: center;
+    grid-column-gap: 40px;
+    margin-top: -20px;
+
+}
+
+/* Second Section - community */
+.community-title{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    color: #2d3951;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: 80px;
+
+}
+#housing{
+    margin-top: 50px;
+}
+
+.healthcare-photo, .travel-img, .work-photo{
+    justify-self: end;
+    margin-right: 50px;
+    margin-top: 24px;
+}
+.education-img, .housing-img{
+    justify-self: start;
+    margin-top: 24px;
+    grid-column: 3/4;
+    margin-left: -50px;
+}
