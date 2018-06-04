@@ -49,5 +49,9 @@ $(".signUpButton").click(function() {
 });
 
 
+    $(".bot-img").click(function(){
+        $("div#chat.conv-form-wrapper").css("display", "block");
+    });
+
 
 });
