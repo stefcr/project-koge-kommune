@@ -777,7 +777,7 @@ div.sign-in-container {
     left: 0;
     right: 0;
     position: absolute;
-    width: 500px;
+    width: 380px;
     border-radius: 10px;
     transition: opacity .5s ease;
     opacity: 0;
@@ -810,6 +810,10 @@ div.sign-in-container {
         }
 
     div.sign-in-container > img {
+        margin: 0 auto 20px;
+        text-align: center;
+        display: block;
+        width: 300px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
