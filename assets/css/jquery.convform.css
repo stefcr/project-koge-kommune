@@ -151,7 +151,7 @@ div#chat.conv-form-wrapper {
     right: 15px;
     background-color: #fefefe;
     border-radius: 10px;
-    width: 280px;
+    width: 300px;
 
 }
 div#chat.conv-form-wrapper div.wrapper-messages {
@@ -159,7 +159,7 @@ div#chat.conv-form-wrapper div.wrapper-messages {
     height: 577px;
     max-height: 300px;
     overflow-y: scroll;
-    padding-left: 5px;
+    padding-left: 7px;
 
 }
 div#chat:before {
