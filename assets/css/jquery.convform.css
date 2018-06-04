@@ -272,7 +272,7 @@ div#chat.conv-form-wrapper div#messages div.message.from {
     background: #2d3951;
     color: #fff;
     border-top-right-radius: 0;
-    margin-right: 8px;
+    margin-right: 12px;
 }
 .message.to+.message.from, .message.from+.message.to {
     margin-top: 15px;
