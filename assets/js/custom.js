@@ -58,9 +58,9 @@ $(".signUpButton").click(function() {
     });
 
 
-    $('.collapse').on('click',function(e){
+    $('.esti-paleta').on('click',function(e){ // this class is set on a button not a parent element...
         e.preventDefault();
-        $(this).toggleClass('active');
+        $(".collapse").toggleClass('active');
     });
 
 
