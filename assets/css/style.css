@@ -907,6 +907,7 @@ div.sign-in-container {
 .self-service-container{
     grid-column: 2/3;
     grid-row:4/5;
+    margin-bottom: 170px;
 }
 .wrap{
     margin-bottom: 2%;
@@ -920,7 +921,6 @@ div.sign-in-container {
     overflow:hidden;
     transition: all 0.4s;
     background-color: #2d3951;
-    border:1px solid red;
     border-radius: 10px;
 
 
@@ -938,6 +938,7 @@ div.sign-in-container {
     max-height:3000px;
     transition: all 0.2s,max-height 4.8s;
 }
+
 .content{
     background-color: #fefefe;
     padding:10px 20px;
@@ -979,4 +980,24 @@ div.sign-in-container {
 
 .collapse.active h2::after{
     content: "-";
+}
+.change-of-address{
+    margin-top: 30px;
+}
+
+.change-of-address input{
+    border:1px solid #2d3951!important;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 0;
+    width: 100%;
+}
+.change-of-address h4{
+ margin-bottom: 5px;
+}
+.change-of-address button{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    width: 20%;
 }
