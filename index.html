@@ -228,29 +228,24 @@
             <div class="card no-border">
                 <div id="chat" class="conv-form-wrapper display">
                     <form action="" method="GET" class="hidden">
-                        <select data-conv-question="Hello! I'm a bot created from a HTML form. Can I show you some features? (this question comes from a select)">
-                            <option value="yes">Yes</option>
-                            <option value="sure">Sure!</option>
-                        </select>
-                        <input type="text" name="name" data-conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first.">
-                        <input type="text" data-conv-question="Howdy, {name}:0! It's a pleasure to meet you. (note that this question doesn't expect any answer)" data-no-answer="true">
-                        <input type="text" data-conv-question="This plugin supports multi-select too. Let's see an example." data-no-answer="true">
-                        <select name="multi[]" data-conv-question="What kind of music do you like?" multiple>
-                            <option value="Rock">Rock</option>
-                            <option value="Pop">Pop</option>
-                            <option value="Country">Country</option>
-                            <option value="Classic">Classic</option>
-                        </select>
-                        <select name="programmer" data-callback="storeState" data-conv-question="So, are you a programmer? (this question will fork the conversation based on your answer)">
+                        <select data-conv-question="Hello! My namee is Rudy, I'm a bot created to help you with any questions you may have. Would you like some help?">
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                         </select>
+                        <input type="text" name="name" data-conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first.">
+                        <input type="text" data-conv-question="Hey, {name}:0! It's a pleasure to meet you." data-no-answer="true">
+                        <input type="text" data-conv-question="I'm here to help you, so let me now with what are you struggling" data-no-answer="true">
+                        </select>
+                        <select name="programmer" data-callback="storeState" data-conv-question="So, are you a programmer? (this question will fork the conversation based on your answer)">
+                            <option value="cpr">Yes</option>
+                            <option value="nemid">No</option>
+                        </select>
                         <div data-conv-fork="programmer">
                             <div data-conv-case="yes">
-                                <input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
+                                <input type="text" data-conv-question="A fellowassada programmer! Cool." data-no-answer="true">
                             </div>
                             <div data-conv-case="no">
-                                <select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
+                                <select name="thought" data-conv-question="Have you dsadasdaever thought about learning? Programming is fun!">
                                     <option value="yes">Yes</option>
                                     <option value="no">No..</option>
                                 </select>
