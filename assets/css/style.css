@@ -11,6 +11,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700');
 @import url('jquery.convform.css');
 @import url('animate.css');
+@import url('responsive.css');
 
 html {
     -webkit-box-sizing: border-box;
@@ -165,7 +166,8 @@ header {
     z-index: -9999;
     grid-column: 1/4;
     grid-row: 3/4;
-
+    height: 70%;
+    width: 100%;
 }
 
 /* First-Section */
@@ -926,7 +928,7 @@ div.sign-in-container {
     margin-bottom: 2%;
 
 }
-.collapse, .collapse2, .collapse3, .collapse4 {
+.collapse, .collapse2, .collapse3, .collapse4, .collapse5 {
     cursor: pointer;
     color: #fefefe;
     padding: 10px;
@@ -941,7 +943,7 @@ div.sign-in-container {
 
 }
 
-.collapse, .collapse2, .collapse3, .collapse4 * {
+.collapse, .collapse2, .collapse3, .collapse4, .collapse5 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -972,9 +974,14 @@ div.sign-in-container {
     color:#fefefe;
     max-height:3000px;
     transition: all 0.2s,max-height 4.8s;
-
 }
-.first-plus:after, .second-plus:after, .third-plus:after, .fourth-plus:after{
+.collapse5.active{
+    z-index: 200;
+    color:#fefefe;
+    max-height:3000px;
+    transition: all 0.2s,max-height 4.8s;
+}
+.first-plus:after, .second-plus:after, .third-plus:after, .fourth-plus:after, .fifth-plus:after{
     text-align: center;
     border-radius:50%;
     font-size:38px;
@@ -1023,6 +1030,9 @@ div.sign-in-container {
 .fourth-plus:hover{
     opacity:1;
 }
+.fifth-plus:hover{
+    opacity: 1;
+}
 
 
 .collapse.active .first-plus::after{
@@ -1035,6 +1045,9 @@ div.sign-in-container {
     content:"-";
 }
 .collapse4.active .fourth-plus::after{
+    content: "-";
+}
+.collapse5.active .fifth-plus::after{
     content: "-";
 }
 .change-of-address{
@@ -1088,3 +1101,38 @@ div.sign-in-container {
     animation-delay: 1.6s;
 
 }
+
+.confirmation{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    position:absolute;
+    color: #2d3951;
+    text-align: center;
+    padding-top: 7%;
+    padding-left: 9%;
+}
+.confirmation1{
+
+    color: #2d3951;
+
+
+
+}
+.conf{
+    grid-column: 2/3;
+    margin: 0 auto;
+    padding-top: 14%;
+
+}
+.wrapper1{
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-rows: auto;
+    position: relative;
+}
+.background-color-1{
+    background-color: #2d3951;
+    grid-column: 1/4;
+
+}
+

@@ -77,6 +77,10 @@ $(".signUpButton").click(function() {
         e.preventDefault();
         $(".collapse4").toggleClass('active');
     });
+    $('.fifth-plus').on('click',function(e){ // this class is set on a button not a parent element...
+        e.preventDefault();
+        $(".collapse5").toggleClass('active');
+    });
 
 
     //Animations......

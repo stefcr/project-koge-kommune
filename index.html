@@ -9,7 +9,7 @@
 		<meta name="description" content="Web concept for Køge Kommune.">
 		<meta name="author" content="Razvan Barbulescu, Stefan Cristian">
 		<meta name="keywords" content="køge, kommune">
-        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"></META>
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
 		<title>Web concept Køge Kommune</title>
 
@@ -239,22 +239,55 @@
                         <select name="help" data-conv-question="Chose a category from down below which you need help with">
                             <option value="cpr">CPR</option>
                             <option value="nemid">nemID</option>
-                            <option value="changeofaddress">nemID</option>
-                            <option value="su">nemID</option>
+                            <option value="changeofaddress">Change of Adress</option>
+                            <option value="su">SU</option>
                         </select>
                         <div data-conv-fork="help">
                             <div data-conv-case="cpr">
                                 <input type="text" data-conv-question=" You can find more informations about CPR on the first page of the webiste or you can check:" data-no-answer="true">
                             </div>
                             <div data-conv-case="nemid">
-                                <input type="text" data-conv-question="Mai sugi pula?" data-no-answer="true">
+                                <input type="text" data-conv-question="For the nemID you need to have CPR and a bank account, you can find more informations donw below" data-no-answer="true">
+                            </div>
+                            <div data-conv-case="changeofaddress">
+                                <input type="text" data-conv-question="If you want to change your address, you can do it trough our self-service. Log in and you will be redirected automatically" data-no-answer="true">
+                            </div>
+                            <div data-conv-case="su">
+                                <input type="text" data-conv-question=" {name}:0 !, you can check the community section to find more informations about SU and how you can get it" data-no-answer="true">
                             </div>
                             <select name="more" data-conv-question="You need more help?">
                                 <option value="yes">yes</option>
                                 <option value="no">no</option>
                             </select>
+                            <div data-conv-fork="more">
+                                <div data-conv-case="yes">
+                                    <select name="help" data-conv-question="Okey, chose another category that you need help with, {{name}:0 ">
+                                        <option value="cpr">CPR</option>
+                                        <option value="nemid">nemID</option>
+                                        <option value="changeofaddress">Change of Address</option>
+                                        <option value="su">SU</option>
+                                    </select>
+                                    <div data-conv-fork="help">
+                                        <div data-conv-case="cpr">
+                                            <input type="text" data-conv-question=" You can find more informations about CPR on the first page of the webiste or you can check:" data-no-answer="true">
+                                        </div>
+                                        <div data-conv-case="nemid">
+                                            <input type="text" data-conv-question="For the nemID you need to have CPR and a bank account, you can find more informations donw below" data-no-answer="true">
+                                        </div>
+                                        <div data-conv-case="changeofaddress">
+                                            <input type="text" data-conv-question="If you want to change your address, you can do it trough our self-service. Log in and you will be redirected automatically" data-no-answer="true">
+                                        </div>
+                                        <div data-conv-case="su">
+                                            <input type="text" data-conv-question=" {name}:0 !, you can check the community section to find more informations about SU and how you can get it" data-no-answer="true">
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="text" data-conv-question="I'm glad that I could help you,">data-no-answer="true">
+                                <input type="text" data-conv-question="Have a nice day,{name}:0 " data-no-answer="true">
+
+                            </div>
                         </div>
-                        <input type="text" data-conv-question="Have a nice day {name}" data-no-answer="true">
+                        <input type="text" data-conv-question="Have a nice day {name}:0" data-no-answer="true">
                     </form>
                 </div>
             </div>

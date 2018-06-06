@@ -56,7 +56,7 @@
     kenZoom: 120, // max zoom for kenburns (in %)
     slideMargin: 0, // spacing between slides (in %)
     transClass: 'transition', // [Class applied to [element] while a transition is taking place.]
-    speed: 800, // time the transition takes (ms)
+    speed: 1500, // time the transition takes (ms)
     easing: 'swing', // easing to use in the animation [(see... [jquery www])]
     continuous: true, // seamless first/ last transistion, only works with loop
     useCSS: true, // true, false -> fallback to js if no browser support
