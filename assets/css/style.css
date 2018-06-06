@@ -765,7 +765,10 @@ textarea:focus{
     grid-column:1/4;
     grid-row:6/7;
     width: 110%!important;
-    height: 110%;
+    height: 180px;
+}
+.bgim2{
+    height: 200px !important;
 }
 
 footer {
