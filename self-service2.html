@@ -43,7 +43,7 @@
                 <a href="self-service.html" >SELF SERVICE</a>
                 <a href="community.html" >COMMUNITY</a>
                 <a href="index.html" >CONTACT</a>
-                <a href="#" class="signUpButton">SIGN IN</a>
+                <a href="index.html" class="signUpButton">LOG OUT</a>
             </nav>
         </header>
         <div class="info-container">
@@ -68,7 +68,7 @@
                         <div class="content">
                         </div>
                     </div>
-            </div>
+                </div>
                 <div class="wrap">
                     <div class="collapse2 slide">
                         <a href="#" class="second-plus"></a>
@@ -82,15 +82,19 @@
                         <a href="#" class="third-plus"></a>
                         <h2>CHANGE OF ADDRESS</h2>
                         <div class="content">
-                            <p>If you want to change your Danish address, you have to inform the authorities.
-                                The online self-service is primarily in Danish (depending on which
-                                <br>municipality you live in or are about to move to), but you can always get help to
-                                fill it in at the local citizen service center or at the library. </p>
-                            <p>
-                                Or maybe you know a Danish speaking person, who can help you.<br>
-                                Before you can use the online service you need to have a digital signature called NemID. </p>
-                            <button type="submit" href="#" class="signUpButton button2">Sign in</button>
-
+                            <form class="change-of-address">
+                                <h4>CPR-NO</h4>
+                                <input type="text" name="CPR" maxlength="10" placeholder="CPR">
+                                <h4>CURRENT ADRESS</h4>
+                                <input type="text" name="address" placeholder="ADDRESS">
+                                <h4>NEW ADRESS</h4>
+                                <input type="text" name="address"  placeholder="ADDRESS">
+                                <h4>CHOOSE GENERAL PRACTITIONER</h4>
+                                <input type="text" name="practitioner" placeholder="PRACTITIONER">
+                                <h4>CONTACT</h4>
+                                <input type="text" name="contact" placeholder="CONTACT">
+                                <button type="submit" class="button">CONFIRM</button>
+                            </form>
                         </div>
                     </div>
 
@@ -106,7 +110,7 @@
                     </div>
                 </div>
 
-</div>
+            </div>
         </div>
     </section>
 
@@ -142,20 +146,6 @@
 
 </div>
 
-<!-- sign-in-pop-up -->
-<div class="self-service">
-<div class="sign-in-container">
-    <div class="sign-in-content">
-        <h3>SIGN-IN TO YOUR PROFILE</h3>
-        <form>
-            <input type="text" name="firstname" placeholder="NEMID" class="input firstname">
-            <input type="text" name="firstname" placeholder="PASSCODE" class="input firstname">
-            <button type="submit" class="button"><a href="self-service2.html">SUBMIT</a> </button>
-        </form>
-    </div>
-    <img src="assets/img/nem-id-signin.png" alt="">
-</div>
-</div>
 
 
 

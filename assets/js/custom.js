@@ -57,11 +57,45 @@ $(".signUpButton").click(function() {
         $(".categories").toggleClass("mov");
     });
 
+// Collapse / plus and minus
 
-    $('.esti-paleta').on('click',function(e){ // this class is set on a button not a parent element...
+    $('.first-plus').on('click',function(e){ // this class is set on a button not a parent element...
         e.preventDefault();
         $(".collapse").toggleClass('active');
     });
+    $('.second-plus').on('click',function(e){ // this class is set on a button not a parent element...
+        e.preventDefault();
+        $(".collapse2").toggleClass('active');
+    });
+
+    $('.third-plus').on('click',function(e){ // this class is set on a button not a parent element...
+        e.preventDefault();
+        $(".collapse3").toggleClass('active');
+    });
+
+    $('.fourth-plus').on('click',function(e){ // this class is set on a button not a parent element...
+        e.preventDefault();
+        $(".collapse4").toggleClass('active');
+    });
+
+
+    //Animations......
+    $('header').addClass('animated fadeInDown');
+    $('.danishflag').addClass('animated fadeInDown');
+    $('.bot-img').addClass('animated wobble');
+    $('h1').addClass('animated fadeInLeft');
+    $('.instructions').addClass('animated flipInX');
+    $('.arrowup').addClass('animated fadeInUp');
+    $('.pointer').addClass('animated fadeInUp');
+
+    $('.section-name').waypoint(function() {
+        $('.section-name').addClass('fadeInLeft');
+    }, { offset: '50%' });
+
+
+
+
+
 
 
 

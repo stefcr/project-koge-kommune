@@ -24,6 +24,7 @@
         <![endif]-->
 
         <link rel="shortcut icon" href="assets/img/ico/favicon.png">
+
     </head>
 
     <body>
@@ -216,7 +217,7 @@
             <form>
                 <input type="text" name="firstname" placeholder="NEMID" class="input firstname">
                 <input type="text" name="firstname" placeholder="PASSCODE" class="input firstname">
-                <button type="submit" class="button">SUBMIT</button>
+                <button type="submit" class="button"><a href="self-service2.html">SUBMIT</a> </button>
             </form>
         </div>
         <img src="assets/img/nem-id-signin.png" alt="">
@@ -228,42 +229,32 @@
             <div class="card no-border">
                 <div id="chat" class="conv-form-wrapper display">
                     <form action="" method="GET" class="hidden">
-                        <select data-conv-question="Hello! My namee is Rudy, I'm a bot created to help you with any questions you may have. Would you like some help?">
+                        <select data-conv-question="Hello! My name is Rudy, I'm a bot created to help you with any questions you may have. Would you like some help?">
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                         </select>
                         <input type="text" name="name" data-conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first.">
                         <input type="text" data-conv-question="Hey, {name}:0! It's a pleasure to meet you." data-no-answer="true">
                         <input type="text" data-conv-question="I'm here to help you, so let me now with what are you struggling" data-no-answer="true">
-                        <select name="programmer" data-callback="storeState" data-conv-question="So, are you a programmer? (this question will fork the conversation based on your answer)">
-                            <option value="cpr">Yes</option>
-                            <option value="nemid">No</option>
+                        <select name="help" data-conv-question="Chose a category from down below which you need help with">
+                            <option value="cpr">CPR</option>
+                            <option value="nemid">nemID</option>
+                            <option value="changeofaddress">nemID</option>
+                            <option value="su">nemID</option>
                         </select>
-                        <div data-conv-fork="programmer">
-                            <div data-conv-case="yes">
-                                <input type="text" data-conv-question="A fellowassada programmer! Cool." data-no-answer="true">
+                        <div data-conv-fork="help">
+                            <div data-conv-case="cpr">
+                                <input type="text" data-conv-question=" You can find more informations about CPR on the first page of the webiste or you can check:" data-no-answer="true">
                             </div>
-                            <div data-conv-case="no">
-                                <select name="thought" data-conv-question="Have you dsadasdaever thought about learning? Programming is fun!">
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No..</option>
-                                </select>
+                            <div data-conv-case="nemid">
+                                <input type="text" data-conv-question="Mai sugi pula?" data-no-answer="true">
                             </div>
+                            <select name="more" data-conv-question="You need more help?">
+                                <option value="yes">yes</option>
+                                <option value="no">no</option>
+                            </select>
                         </div>
-                        <input type="text" data-conv-question="convForm also supports regex patterns. Look:" data-no-answer="true">
-                        <input data-conv-question="Type in your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required placeholder="What's your e-mail?">
-                        <input data-conv-question="Now tell me a secret (like a password)" type="password" data-minlength="6" id="senha" name="password" required placeholder="password">
-                        <select data-conv-question="Selects also support callback functions. For example, try one of these:">
-                            <option value="google" data-callback="google">Google</option>
-                            <option value="bing" data-callback="bing">Bing</option>
-                        </select>
-                        <select name="callbackTest" data-conv-question="You can do some cool things with callback functions. Want to rollback to the 'programmer' question before?">
-                            <option value="yes" data-callback="rollback">Yes</option>
-                            <option value="no" data-callback="restore">No</option>
-                        </select>
-                        <select data-conv-question="This is it! If you like me, consider donating! If you need support, contact me. When the form gets to the end, the plugin submits it normally, like you had filled it." id="">
-                            <option value="">Awesome!</option>
-                        </select>
+                        <input type="text" data-conv-question="Have a nice day {name}" data-no-answer="true">
                     </form>
                 </div>
             </div>
@@ -289,8 +280,10 @@
 
     <!-- The magic starts from here -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/waypoint.js"></script>
     <script src="assets/js/slippry.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/jquery.convform.js"></script>
+
 
 </html>
