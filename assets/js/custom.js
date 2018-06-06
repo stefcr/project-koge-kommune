@@ -88,7 +88,6 @@ $(".signUpButton").click(function() {
     $('.danishflag').addClass('animated fadeInDown');
     $('.bot-img').addClass('animated wobble');
     $('h1').addClass('animated fadeInLeft');
-    $('.instructions').addClass('animated flipInX');
     $('.arrowup').addClass('animated fadeInUp');
     $('.pointer').addClass('animated fadeInUp');
 
